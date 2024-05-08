@@ -55,21 +55,32 @@ header {
     text-decoration: none;
     color: #000;
     height: 15px;
-    padding: 20px;
+    padding: 10px;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: H2Font;
+    line-height: 2.5;
+    box-shadow: inset 0 0 0 0 #9CAFAA;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.active {
+    color: #4c504f;
+    text-decoration: underline;
+    text-decoration-color: #9CAFAA;
 }
 
 .navlink:hover {
-    background-color: #9CAFAA;
+    color: #FBF3D5;
+    box-shadow: inset 200px 0 0 0 #9CAFAA;
 }
 
 .subheader {
     display: grid;
-    width: 100%;
-    justify-items: flex-end;
-    padding-right: 10px;
+    width: 97%;
+    justify-items:flex-end;
+    padding-top: 10px;
 }
 
 .desc {
@@ -79,7 +90,7 @@ header {
 .buttonshopnow {
     width: 100px;
     height: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: #FBF3D5;
     background-color: #9CAFAA;
 }
@@ -218,18 +229,13 @@ footer {
     .featured-product {      
         display: none;        
     }
-
-
+ 
     footer {
-        position: relative;
-        top: 850px;
-        bottom: auto;
-        left: auto;
-        right: auto;
-        justify-content: center;
-    }
-
+    display: hidden;        
+    } 
     .navlink {
         margin: auto;
+        font-size: 15px;
+        padding: 10px;
     }
 }
