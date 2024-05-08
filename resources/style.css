@@ -82,7 +82,6 @@ header {
     margin-top: 20px;
     color: #FBF3D5;
     background-color: #9CAFAA;
-
 }
 
 /*LATEST PRODUCT ELEMENT STYLING*/
@@ -93,7 +92,7 @@ header {
     gap: 10px;
     width: 80%;
     height: 450px;
-
+    margin-bottom: 10px;
 }
 
 .product-card1 {
@@ -139,14 +138,13 @@ header {
 .product-image1,
 .product-image2,
 .product-image3 {
-    width: 120px;
+    width: 200px;
     height: 320px;
 }
 
 .buttoncart {
     width: 100px;
     height: 25px;
-    margin-top: 20px;
     color: #FBF3D5;
     background-color: #EFBC9B;
 }
@@ -158,6 +156,7 @@ header {
     height: 180px;
     background-color: #EFBC9B;
     grid-template-columns: 1fr 2fr;
+    margin-bottom: 10px;
 
 }
 
@@ -175,6 +174,7 @@ header {
 
 .details {
     padding-left: 10px;
+    padding-top: 20px;
     display: grid;
     width: 100%;
     grid-area: 1/ 2 / 2 /3;
@@ -215,29 +215,14 @@ footer {
         margin: auto;
     }
 
-    .featured-product {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: auto;
-
+    .featured-product {      
+        display: none;        
     }
 
-    .featured-product-image,
-    .details {
-        position: relative;
-        top: 800px;
-        bottom: auto;
-        left: auto;
-        right: auto;
-        justify-content: center;
-
-    }
 
     footer {
         position: relative;
-        top: 950px;
+        top: 850px;
         bottom: auto;
         left: auto;
         right: auto;
