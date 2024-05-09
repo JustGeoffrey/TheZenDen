@@ -20,6 +20,7 @@ body {
     justify-items: center;
 }
 
+
 /*HEADER ELEMENT STYLING*/
 header {
     display: grid;
@@ -94,6 +95,29 @@ header {
     color: #FBF3D5;
     background-color: #9CAFAA;
 }
+
+/* STORE PAGE */
+.store-products {
+    display: inline-flex;
+
+    /* flex-flow: row wrap; */
+
+    width: 80%;
+    height: 450px;
+    margin-bottom: 10px;
+}
+
+.store-product {
+
+
+    width: 100%;
+    margin: auto;
+    background-color: #9CAFAA;
+    height: 450px;
+    border: 1px solid grey;
+}
+
+
 
 /*LATEST PRODUCT ELEMENT STYLING*/
 .product-card-strip {
