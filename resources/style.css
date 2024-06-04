@@ -233,7 +233,7 @@ header {
 /*FOOTER  ELEMENT STYLING*/
 footer {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     width: 80%;
     background-color: #9CAFAA;
 }
