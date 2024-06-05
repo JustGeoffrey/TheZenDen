@@ -197,6 +197,20 @@ header {
     color: #FBF3D5;
     background-color: #EFBC9B;
 }
+.Hoverbutton{
+    width: 300px;
+    height: 25px;
+    color: #FBF3D5;
+    background-color: #9CAFAA;
+   
+}
+.Hoverbutton1{
+    width: 300px;
+    height: 25px;
+    color: #FBF3D5;
+    background-color: #9CAFAA;
+   
+}
 
 /*FEATURED PRODUCT ELEMENT STYLING*/
 .featured-product {
@@ -228,6 +242,12 @@ header {
     width: 100%;
     grid-area: 1/ 2 / 2 /3;
 
+}
+
+/*Display COHORT INFO*/
+.info-container {
+    width:80%;
+    margin: auto;
 }
 
 /*FOOTER  ELEMENT STYLING*/
