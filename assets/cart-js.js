@@ -128,3 +128,11 @@ function updateTotals(cart) {
 
 // Initialize cart rendering on page load
 document.addEventListener('DOMContentLoaded', renderCart);
+
+document.querySelector('.confirmbutton').addEventListener('click', () => {
+    if(cart.length != 0) {
+        alert("Thanks for your order!")
+    } else {
+        alert("Maybe have a look at our amazing selection")
+    }
+})
