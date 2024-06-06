@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheZenDen</title>
-    <link rel="stylesheet" href="resources/cart-style.css">
+    <link rel="stylesheet" href="./resources/cart-style.css">
 </head>
 
 <body>
@@ -16,79 +16,58 @@
                 <img class="logo" src="./resources/image.png">
             </div>
             <nav>
-                <a class="navlink active" href="cart.html">Cart</a>
+                <a class="navlink active " href="cart.html">Cart</a>
                 <a class="navlink " href="store.html">Store</a>
                 <a class="navlink " href="index.html">Home</a>
+                <div class="subheader">
+                    <h2 class="desc"> Ultimate <strong>yoga gear destination</strong> </h2>
+                    <button class=" buttonshopnow" onclick="document.location='store.html'">Shop now</button>
+                </div>
             </nav>
+
         </header>
-        <!..............................HTML Cart Table.............................>
-
-            <h2>Your Shopping Cart</h2>
-
-
-            <table class="table1">
+        <!--PRODUCTS SECTION-->
+        <h2>Cart</h2>
+        <table class="table1">
+            <thead>
                 <tr>
-                    <th class="item-image">Item</th>
-                    <th class="item-name">Item Name</th>
-                    <th class="item-size">Size</th>
-                    <th class="item-price">Price</th>
-                    <th class="item-status">Cart Status</th>
+                    <th class="table-image">Item</th>
+                    <th class="Item-name">Item Name</th>
+                    <th class="price">Price</th>
+                    <th class="quantity">Quantity</th>
+                    <th class="remove">Remove</th>
+                    <th class="total-value">Total</th>
                 </tr>
-                <tr>,
-                    <td class="item-image"><img src="resources/cartimage1.jpg" alt="Yoga Book" width="200" height="200"></td>
-                    <td class="item-name">Yoga-book</td>
-                    <td class="item-size">Size: M</td>
-                    <td class="item-price">$49.99</td>
-                    <td class="item-status"><button>Remove Item</button></td>
-
-                </tr>
-                <tr>
-                    <td class="item-image"><img src="resources/cartimage2.jpg" alt="Cushion" width="200" height="200"></td>
-                    <td class="item-name">Cushion</td>
-                    <td class="item-size">Size: M</td>
-                    <td class="item-price">$59.99</td>
-                    <td class="item-status"><button>Remove Item</button></td>
-                </tr>
-                <tr>
-                    <td class="item-image"><img src="resources/cartimage3.jpg" alt="Yoga Mat" width="200" height="200"></td>
-                    <td class="item-name">Yoga-mat</td>
-                    <td class="item-size">Size: M</td>
-                    <td class="item-price">$29.99</td>
-                    <td class="item-status"><button>Remove Item</button></td>
-                </tr>
-            </table>
-
-
-            <table class="table2">
-                <tr>
-                    <td class="labels">Subtotal</td>
-                    <td>$193.97</td>
-                </tr>
-                <tr>
-                    <td class="labels">GST inclusive</td>
-                    <td>$19.37</td>
-                </tr>
-                <tr>
-                    <td class="labels">Shipping</td>
-                    <td>$15.00</td>
-                </tr>
-                <tr>
-                    <td class="labels">Total</td>
-                    <td>$208.97</td>
-                </tr>
-                <tr>
-                    <td class="labels"></td>
-                    <td><button type="button" class="buttoncheckout">Checkout</button></td>
-                </tr>
-            </table>
-            <!--FOOTER SECTION-->
-            <footer>
-                <h3>copyright©2024 TheZenDen </h3>
-                <h5 >Current Date and time</h5>
-                <div class="datetime"></div>
-            </footer>
+            </thead>
+            <tbody>
+                <!-- Cart items will be dynamically rendered here -->
+            </tbody>
+        </table>
+        <table class="table2">
+            <tr>
+                <td class="labels">Subtotal</td>
+                <td > </td>
+            </tr>
+            <tr>
+                <td class="labels">Shipping</td>
+                <td > </td>
+            </tr>
+            <tr>
+                <td class="labels">Grandtotal</td>
+                <td ></td> 
+            </tr>
+        </table>
+        
+         <!--FOOTER SECTION-->
+         <footer>
+            <br>
+            <h3>copyright©2024 TheZenDen </h3>
+            <h5 >Current Date and time</h5>
+            <div class="datetime"></div>
+            <br>
+        </footer>
     </div>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/cart-js.js"></script>
 </body>
 
 </html>
