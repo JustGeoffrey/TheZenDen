@@ -98,9 +98,16 @@ function loadCart() {
 // Function to add a product to the cart
 function addToCart(productId) {
     const product = storeItems.find(p => p.id === productId);
-    cart.push(product);
-    saveCart();
-    alert("Product added!,Click 'Cart' tab to see your cart");
+
+    // DON'T ALLOW THE SAME ITEM TO BE ADDED MULTIPLE TIMES
+    if(cart.find((p => p.id === productId)) === undefined){
+        cart.push(product);
+        saveCart();
+        alert("Product added!,Click 'Cart' tab to see your cart");
+    } else {
+        alert("Go to the Cart to finalise your purchase.");
+    }
+
 }
 
 

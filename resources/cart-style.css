@@ -26,6 +26,12 @@ body {
     color: #FBF3D5;
     background-color: #9CAFAA;
 }
+.confirmbutton {
+    width: 200;
+    height: 30px;
+
+    margin-bottom: 10px;
+}
 .subheader {
     display: grid;
     width: 97%;
